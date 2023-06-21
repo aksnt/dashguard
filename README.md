@@ -2,29 +2,26 @@
 
 This script allows you to back up all existing dashboards in Kibana using the ELK API. The backup files are saved as separate JSON files, which can be imported to restore the dashboards in case of any issues or data loss.
 
-## Prerequisites
-
+### Prerequisites
 - Python 3.6 or above
 - Flask
 - Requests
 
-## Installation
+#### 1. Installation
 
-1. Clone this repository or download the code files.
-2. Install the required dependencies using pip:
-
+Install the required dependencies using pip:
 ```bash
 pip install flask requests
 ```
 
-### Configuration
-3. Open the kibana_api.py file and modify the KIBANA_HOST variable to the URL of your Kibana instance. For example: 
+#### 2. Configuration
+Create a .env the kibana_api.py file and modify the KIBANA_HOST variable to the URL of your Kibana instance. For example: 
 
-```python
+```bash
 HOST=http://localhost:5601
 ```
 
-### Usage
+#### 3. Usage
 Start the Flask application by running the app.py file:
 
 ```bash
